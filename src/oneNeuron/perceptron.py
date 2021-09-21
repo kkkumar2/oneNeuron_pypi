@@ -1,21 +1,7 @@
-# oneNeuron_pypi
+import numpy as np
+import logging
+from tqdm import tqdm
 
-# SINGLE LAYER PERCEPTRON :
-
-The perceptron is a single processing unit of any neural network. Frank Rosenblatt first proposed in 1958 is a simple neuron which is used to classify its input into one or two categories. Perceptron is a linear classifier, and is used in supervised learning. It helps to organize the given input data.
-
-A perceptron is a neural network unit that does a precise computation to detect features in the input data. Perceptron is mainly used to classify the data into two parts. Therefore, it is also known as Linear Binary Classifier.
-
-The perceptron consists of 4 parts.
-* Input value or One input layer: The input layer of the perceptron is made of artificial input neurons and takes the initial data into the system for further processing.
-* Weights and Bias:
-Weight: It represents the dimension or strength of the connection between units. If the weight to node 1 to node 2 has a higher quantity, then neuron 1 has a more considerable influence on the neuron.
-* Bias: It is the same as the intercept added in a linear equation. It is an additional parameter which task is to modify the output along with the weighted sum of the input to the other neuron.
-Net sum: It calculates the total sum.
-* Activation Function: A neuron can be activated or not, is determined by an activation function. The activation function calculates a weighted sum and further adding bias with it to give the result.
-
-
-```python
 class Perceptron:
   def __init__(self, eta, epochs):
     self.weights = np.random.randn(3) * 1e-4 # SMALL WEIGHT INIT
@@ -57,5 +43,3 @@ class Perceptron:
     total_loss = np.sum(self.error)
     logging.info(f"total loss: {total_loss}")
     return total_loss
-
-```
