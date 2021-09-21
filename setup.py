@@ -8,7 +8,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name=f"{PROJECT_NAME}-{USER_NAME}",
-    version="0.0.1",
+    version="0.0.2",
     author=USER_NAME,
     author_email="kmohankumar123456@gmail.com",
     description="This is a Single layer Perceptron package",
@@ -29,6 +29,6 @@ setuptools.setup(
 #    with open("requirements.txt", "r", encoding="utf-8") as fh:
 #    install_requires = fh.read()
 #    install_requires_content_type="text/plain"
-    install_requires = ["numpy","tqdm"]
+    install_requires = ["numpy","tqdm","pandas","matplotlib","logging","joblib"]
 
 )
