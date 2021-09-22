@@ -1,5 +1,3 @@
-# oneNeuron_pypi
-
 # SINGLE LAYER PERCEPTRON :
 
 The perceptron is a single processing unit of any neural network. Frank Rosenblatt first proposed in 1958 is a simple neuron which is used to classify its input into one or two categories. Perceptron is a linear classifier, and is used in supervised learning. It helps to organize the given input data.
