@@ -8,7 +8,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name=f"{PROJECT_NAME}-{USER_NAME}",
-    version="0.0.4",
+    version="0.0.5",
     author=USER_NAME,
     author_email="kmohankumar123456@gmail.com",
     description="This is a Single layer Perceptron package",
