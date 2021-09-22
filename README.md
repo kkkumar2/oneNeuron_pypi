@@ -14,6 +14,21 @@ Weight: It represents the dimension or strength of the connection between units.
 Net sum: It calculates the total sum.
 * Activation Function: A neuron can be activated or not, is determined by an activation function. The activation function calculates a weighted sum and further adding bias with it to give the result.
 
+# how to use this Package :
+
+## Import these libraries :
+```python
+from oneNeuron.perceptron import Perceptron
+from oneNeuron.allutils import prepare_data
+from oneNeuron.allutils import save_model
+```
+
+# how to call Perceptron class :
+```python
+model = Perceptron(eta, epochs)
+model.fit(X, y)
+```
+# A glance of the code :
 
 ```python
 class Perceptron:
